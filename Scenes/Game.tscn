@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Ball.tscn" type="PackedScene" id=2]
+
+[node name="MainLoop" type="Node2D"]
+position = Vector2( 0, -1 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 54, 265 )
+SPEED = 10000
+
+[node name="KinematicBody2D2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 951, 255 )
+input_type = 1
+SPEED = 10000
+
+[node name="KinematicBody2D3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 194, 263 )
