@@ -12,9 +12,6 @@ var another_dict = {
 	"keys": {'up': KEY_UP, 'down': KEY_DOWN}
 }
 
-func _ready():
-	pass
-
 func _physics_process(delta):
 	var motion := Vector2.ZERO
 	
@@ -26,3 +23,6 @@ func _physics_process(delta):
 	
 	motion = motion.normalized()
 	motion = move_and_slide(motion * SPEED * delta)
+	
+func process(delta):
+	pass
